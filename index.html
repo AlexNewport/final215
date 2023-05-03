@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project 215</title>
+    <script type="text/javascript" src="./lib/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="./js/final.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <h1>CRUD with Pokemon by Alex Newport</h1>
+        <h4>Select the "+" to start adding a new Pokemon. Select a Pokemon from the list to view the type data. You can edit or delete after selecting.</h4>
+        <ul></ul>
+        <div id="editor">
+            <h3>Pokemon Editor</h3>
+            <div class="horizontal">
+                <label for="nameToEdit">Name:</label>
+                <input type="text" id="nameToEdit">
+            </div>
+            <div class="horizontal">
+                <label for="type1">Type 1:</label>
+                <select id="type1" name="type1">
+                    <option value="Normal">Normal</option>
+                    <option value="Fire">Fire</option>
+                    <option value="Water">Water</option>
+                    <option value="Grass">Grass</option>
+                    <option value="Electric">Electric</option>
+                    <option value="Ice">Ice</option>
+                    <option value="Fighting">Fighting</option>
+                    <option value="Poison">Poison</option>
+                    <option value="Ground">Ground</option>
+                    <option value="Flying">Flying</option>
+                    <option value="Psychic">Psychic</option>
+                    <option value="Bug">Bug</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Ghost">Ghost</option>
+                    <option value="Dragon">Dragon</option>
+                    <option value="Dark">Dark</option>
+                    <option value="Steel">Steel</option>
+                    <option value="Fairy">Fairy</option>
+                  </select>
+            </div>
+            <div class="horizontal">
+                <label for="type2">Type 2:</label>
+                <select id="type2" name="type2">
+                    <option value="Normal">Normal</option>
+                    <option value="Fire">Fire</option>
+                    <option value="Water">Water</option>
+                    <option value="Grass">Grass</option>
+                    <option value="Electric">Electric</option>
+                    <option value="Ice">Ice</option>
+                    <option value="Fighting">Fighting</option>
+                    <option value="Poison">Poison</option>
+                    <option value="Ground">Ground</option>
+                    <option value="Flying">Flying</option>
+                    <option value="Psychic">Psychic</option>
+                    <option value="Bug">Bug</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Ghost">Ghost</option>
+                    <option value="Dragon">Dragon</option>
+                    <option value="Dark">Dark</option>
+                    <option value="Steel">Steel</option>
+                    <option value="Fairy">Fairy</option>
+                    <option value="None">None</option>
+                </select>
+            </div>
+            <div class="horizontal">
+                <button id="saveButton" onclick="savePokemon()">Save Changes</button>
+                <button id="deleteButton" onclick="deletePokemon()">Delete</button>
+                <button id="cancelButton" onclick="cancelEditor()">Cancel</button>
+            </div>
+        </div>
+        <br>
+        <button id="addButton" onclick="addPokemon()">+</button>
+    </div>
+</body>
+</html>

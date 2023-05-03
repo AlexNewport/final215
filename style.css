@@ -1,0 +1,124 @@
+body {
+    background-color: yellow;
+  }
+  
+#wrapper {
+    border: 10px solid;
+    border-image-slice: 3;
+    border-image-source: linear-gradient(to bottom, red 40%, black 40%, black 60%, white 60%);
+    background-color: #F5F5F5;
+    margin: 10px;
+    padding: 20px;
+    outline: 2px solid black;
+    box-shadow: inset 0 0 30px -10px black;
+    height: 550px;
+}
+
+ul {
+    height: 350px;
+    width: 275px;
+    overflow-y: auto;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+li {
+    padding: 10px;
+    background-color: #EEEEEE;
+    cursor: pointer;
+}
+
+li:hover {
+    background-color: #CCCCCC;
+}
+
+li.selected {
+    background-color: #9fdbe6;
+}
+
+button {
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+
+#addButton {
+    color: green;
+    font-size: 48px;
+    margin: 10px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+#editor {
+    border: 1px solid black;
+    padding: 10px;
+    padding-top: 0px;
+    display: none;
+    position: absolute;
+    top: 175px;
+    margin-left: 50px;
+    opacity: 0;
+}
+  
+.horizontal {
+    margin-bottom: 20px;
+}
+  
+label {
+    display: inline-block;
+    width: 70px;
+    font-weight: 600;
+}
+  
+select {
+    width: 170px;
+}
+
+input {
+    width: 162px;
+}
+
+#saveButton {
+    background-color: green;
+    color: white;
+}
+  
+#deleteButton {
+    background-color: red;
+    color: white;
+    margin-right: 15px;
+}
+
+.hyper-rotate {
+    animation-name: hyper-rotate;
+    animation-duration: 2s;
+}
+
+@keyframes spin-shrink {
+    0% {
+        transform: rotate(0) scale(1);
+        opacity: 1;
+    }
+    25% {
+        transform: rotate(180deg) scale(0.8);
+        opacity: 1;
+    }
+    50% {
+        transform: rotate(360deg) scale(0.6);
+        opacity: 0.8;
+    }
+    75% {
+        transform: rotate(540deg) scale(0.4);
+        opacity: 0.6;
+    }
+    100% {
+        transform: rotate(720deg) scale(0);
+        opacity: 0;
+    }
+}
